@@ -14,4 +14,4 @@ frontend/.next/
 frontend/.env.local
 
 # OS
-.DS_Store
+.DS_Store"backend/.env" 
