@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: docmind-rag-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: CHROMA_PERSIST_DIR
+        value: ./chroma_db
+      - key: CHUNK_SIZE
+        value: 512
+      - key: CHUNK_OVERLAP
+        value: 64
