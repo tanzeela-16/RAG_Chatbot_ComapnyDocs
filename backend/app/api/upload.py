@@ -4,13 +4,13 @@ from app.services.ingestion import ingest_file
 from app.models.schemas import DocumentInfo
 
 router = APIRouter()
-ALLOWED_EXTENSIONS = {"pdf", "docx", "txt", "md"}
+ALLOWED_EXTENSIONS = {"pdf", "docx", "txt", "md", "png", "jpg", "jpeg", "webp", "ppt", "pptx", "xls", "xlsx"}
 
 @router.post("/upload/{session_id}", response_model=DocumentInfo)
 async def upload_document(session_id: str, file: UploadFile = File(...)):
     ext = file.filename.rsplit(".", 1)[-1].lower()
     if ext not in ALLOWED_EXTENSIONS:
-        raise HTTPException(400, f"File type .{ext} not supported. Use PDF, DOCX, or TXT.")
+        raise HTTPException(400, f"File type .{ext} not supported. Use PDF, DOCX, TXT, or images.")
 
     with tempfile.NamedTemporaryFile(delete=False, suffix=f".{ext}") as tmp:
         shutil.copyfileobj(file.file, tmp)
