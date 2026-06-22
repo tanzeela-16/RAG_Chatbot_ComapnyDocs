@@ -153,11 +153,9 @@ rag-company-docs/
 | Service | Platform | Cost |
 |---|---|---|
 | Frontend | Vercel | Free |
-| Backend | Railway | Free tier |
-| Vector DB | ChromaDB (local on Railway) | Free |
+| Backend | Hugging Face Spaces | Free |
+| Vector DB | ChromaDB (persistent in HF Space container) | Free |
 | LLM | Groq API | Free tier |
-
-See [deployment guide](docs/DEPLOY.md) for step-by-step instructions.
 
 ---
 
