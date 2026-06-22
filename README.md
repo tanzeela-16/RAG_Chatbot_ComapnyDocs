@@ -11,7 +11,7 @@
 
 **Upload any document or image → Ask questions in natural language → Get cited, structured answers**
 
-[🚀 Live Demo] (https://rag-chatbot-comapny-docs.vercel.app) · [🐛 Report Bug](../../issues)
+[🚀 Live Demo](https://rag-chatbot-comapny-docs.vercel.app) · [🐛 Report Bug](../../issues)
 
 ![DocMind RAG Demo](docs/demo.png)
 
