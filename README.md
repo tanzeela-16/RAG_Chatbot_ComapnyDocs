@@ -11,7 +11,7 @@
 
 **Upload any document or image → Ask questions in natural language → Get cited, structured answers**
 
-[🚀 Live Demo](https://your-demo-link.vercel.app) · [📖 API Docs](https://your-backend.railway.app/docs) · [🐛 Report Bug](../../issues)
+[🚀 Live Demo](https://rag-chatbot-comapny-docs.vercel.app) · [📖 API Docs](https://your-backend.railway.app/docs) · [🐛 Report Bug](../../issues)
 
 ![DocMind RAG Demo](docs/demo.png)
 
@@ -73,7 +73,7 @@
 ### 1. Clone & setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/rag-company-docs.git
+git clone https://github.com/tanzeela-16/RAG_Chatbot_ComapnyDocs.git
 cd rag-company-docs
 ```
 
